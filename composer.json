@@ -1,0 +1,44 @@
+{
+    "name": "nailsapp/module-store",
+    "keywords": ["Nails", "Shed Collective", "CodeIgniter", "Store Module", "Store"],
+    "homepage": "http://nailsapp.co.uk/modules/shop",
+    "description": "This is the \"Store\" module for Nails.",
+    "license": "MIT",
+    "authors":
+    [
+        {
+            "name": "Pablo de la Pena",
+            "email": "p@nailsapp.co.uk",
+            "homepage": "http://nailsapp.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "support":
+    {
+        "email": "hello@nailsapp.co.uk"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require":
+    {
+        "nailsapp/common": "dev-develop",
+        "nailsapp/module-invoice": "dev-develop"
+    },
+    "require-dev":
+    {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload":
+    {
+        "psr-4": {"Nails\\Store\\": "src/"}
+    },
+    "extra":
+    {
+        "nails" :
+        {
+            "moduleName": "store",
+            "type": "module",
+            "namespace": "Nails\\Store\\"
+        }
+    }
+}
