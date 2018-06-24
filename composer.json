@@ -38,7 +38,12 @@
         {
             "moduleName": "store",
             "type": "module",
-            "namespace": "Nails\\Store\\"
+            "namespace": "Nails\\Store\\",
+            "data": {
+                "nailsapp/module-api": {
+                    "namespace": "store"
+                }
+            }
         }
     }
 }
