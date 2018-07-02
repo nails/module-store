@@ -3,13 +3,18 @@
 namespace Nails\Store\Model\Product;
 
 use Nails\Common\Model\Base;
+use Nails\Common\Traits\Model\Sortable;
 
 class Download extends Base
 {
+    use Sortable;
+
+    // --------------------------------------------------------------------------
+
     public function __construct()
     {
         parent::__construct();
-        $this->table = NAILS_DB_PREFIX . 'store_product_image';
+        $this->table = NAILS_DB_PREFIX . 'store_product_download';
         $this->addExpandableField([
             'trigger'   => 'product',
             'type'      => self::EXPANDABLE_TYPE_SINGLE,

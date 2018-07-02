@@ -4,10 +4,12 @@ namespace Nails\Store\Model;
 
 use Nails\Common\Model\Base;
 use Nails\Common\Traits\Model\Nestable;
+use Nails\Common\Traits\Model\Sortable;
 
 class Category extends Base
 {
     use Nestable;
+    use Sortable;
 
     // --------------------------------------------------------------------------
 
@@ -29,7 +31,7 @@ class Category extends Base
         $aFields['parent_id']->label = 'Parent';
         $aFields['parent_id']->info  = 'Nesting categories to provide a hierarchy to the items in your store.';
         $aFields['parent_id']->class = 'js-store-searcher';
-        $aFields['parent_id']->data  = ['searcher' => 'category'];
+        $aFields['parent_id']->data  = ['api' => 'category'];
 
         $aFields['body']->label = 'Body';
         $aFields['body']->type  = 'cms_widgets';

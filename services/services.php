@@ -44,6 +44,13 @@ return [
                 return new \Nails\Store\Model\Product();
             }
         },
+        'ProductCategory' => function () {
+            if (class_exists('\App\Store\Model\Product\Category')) {
+                return new \App\Store\Model\Product\Category();
+            } else {
+                return new \Nails\Store\Model\Product\Category();
+            }
+        },
         'ProductDownload' => function () {
             if (class_exists('\App\Store\Model\Product\Download')) {
                 return new \App\Store\Model\Product\Download();
