@@ -1,5 +1,5 @@
 {
-    "name": "nailsapp/module-store",
+    "name": "nails/module-store",
     "keywords": [
         "Nails",
         "Shed Collective",
@@ -24,8 +24,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "nailsapp/common": "dev-develop",
-        "nailsapp/module-invoice": "dev-develop"
+        "nails/common": "dev-develop",
+        "nails/module-invoice": "dev-develop"
     },
     "require-dev": {
         "phpunit/phpunit": "4.*"
@@ -41,19 +41,19 @@
             "type": "module",
             "namespace": "Nails\\Store\\",
             "data": {
-                "nailsapp/module-admin": {
+                "nails/module-admin": {
                     "autoload": {
                         "assets": {
                             "js": [
                                 [
                                     "admin.store.js",
-                                    "nailsapp/module-store"
+                                    "nails/module-store"
                                 ]
                             ]
                         }
                     }
                 },
-                "nailsapp/module-api": {
+                "nails/module-api": {
                     "namespace": "store"
                 }
             }

@@ -15,7 +15,7 @@ class Tag extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'product',
             'model'     => 'Product',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -23,7 +23,7 @@ class Tag extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'tag',
             'model'     => 'Tag',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'tag_id',
         ]);
     }

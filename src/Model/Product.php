@@ -23,7 +23,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'category',
             'model'     => 'Category',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'category_id',
         ]);
         $this->addExpandableField([
@@ -31,7 +31,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'downloads',
             'model'     => 'ProductDownload',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -39,7 +39,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'images',
             'model'     => 'ProductImage',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -47,7 +47,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'meta',
             'model'     => 'ProductMeta',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -55,7 +55,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'prices',
             'model'     => 'ProductPrice',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -63,7 +63,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'tags',
             'model'     => 'ProductTag',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
         $this->addExpandableField([
@@ -71,7 +71,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'categories',
             'model'     => 'ProductCategory',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
     }

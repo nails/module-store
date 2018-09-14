@@ -20,7 +20,7 @@ class Meta extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'product',
             'model'     => 'Product',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'product_id',
         ]);
     }

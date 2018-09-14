@@ -23,7 +23,7 @@ class Cart extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'products',
             'model'     => 'CartProduct',
-            'provider'  => 'nailsapp/module-store',
+            'provider'  => 'nails/module-store',
             'id_column' => 'cart_id',
         ]);
     }

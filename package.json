@@ -1,9 +1,9 @@
 {
-  "name": "nailsapp-module-store",
+  "name": "nails-module-store",
   "version": "0.0.0",
   "description": "The Nails Store Module",
   "main": "assets/js/admin.store.min.js",
-  "repository": "https://github.com/nailsapp/module-store",
+  "repository": "https://github.com/nails/module-store",
   "author": "Pablo de la Peña <p@nailsapp.co.uk>",
   "license": "MIT",
   "devDependencies": {
