@@ -7,7 +7,7 @@
   "author": "Pablo de la Peña <p@nailsapp.co.uk>",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "^4.14.0",
+    "webpack": "^4.28.4",
     "webpack-command": "^0.4.2"
   },
   "scripts": {
