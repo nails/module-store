@@ -5,6 +5,7 @@ namespace Nails\Store\Model;
 use Nails\Common\Model\Base;
 use Nails\Common\Traits\Model\Nestable;
 use Nails\Common\Traits\Model\Sortable;
+use Nails\Config;
 
 class Category extends Base
 {
@@ -13,10 +14,13 @@ class Category extends Base
 
     // --------------------------------------------------------------------------
 
+    const TABLE_NAME = NAILS_DB_PREFIX . 'store_category';
+
+    // --------------------------------------------------------------------------
+
     public function __construct()
     {
         parent::__construct();
-        $this->table             = NAILS_DB_PREFIX . 'store_category';
         $this->tableAutoSetSlugs = true;
     }
 

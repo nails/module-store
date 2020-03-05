@@ -6,10 +6,13 @@ use Nails\Common\Model\Base;
 
 class Product extends Base
 {
+    const TABLE_NAME = NAILS_DB_PREFIX . 'store_sale_product';
+
+    // --------------------------------------------------------------------------
+
     public function __construct()
     {
         parent::__construct();
-        $this->table = NAILS_DB_PREFIX . 'store_sale_product';
         $this->addExpandableField([
             'trigger'   => 'sale',
             'type'      => self::EXPANDABLE_TYPE_SINGLE,

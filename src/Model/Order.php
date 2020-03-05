@@ -6,6 +6,10 @@ use Nails\Common\Model\Base;
 
 class Order extends Base
 {
+    const TABLE_NAME = NAILS_DB_PREFIX . 'store_order';
+
+    // --------------------------------------------------------------------------
+
     const STATUS_PENDING   = 'PENDING';
     const STATUS_PAID      = 'PAID';
     const STATUS_PACKED    = 'PACKED';
@@ -17,7 +21,6 @@ class Order extends Base
     public function __construct()
     {
         parent::__construct();
-        $this->table              = NAILS_DB_PREFIX . 'store_order';
         $this->tableAutoSetTokens = true;
     }
 }

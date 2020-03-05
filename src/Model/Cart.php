@@ -3,9 +3,14 @@
 namespace Nails\Store\Model;
 
 use Nails\Common\Model\Base;
+use Nails\Config;
 
 class Cart extends Base
 {
+    const TABLE_NAME = NAILS_DB_PREFIX . 'store_cart';
+
+    // --------------------------------------------------------------------------
+
     const STATUS_OPEN         = 'OPEN';
     const STATUS_CHECKING_OUT = 'CHECKING_OUT';
     const STATUS_COMPLETE     = 'COMPLETE';
@@ -16,7 +21,6 @@ class Cart extends Base
     public function __construct()
     {
         parent::__construct();
-        $this->table              = NAILS_DB_PREFIX . 'store_cart';
         $this->tableAutoSetTokens = true;
         $this->addExpandableField([
             'trigger'   => 'products',

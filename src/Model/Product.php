@@ -6,6 +6,10 @@ use Nails\Common\Model\Base;
 
 class Product extends Base
 {
+    const TABLE_NAME = NAILS_DB_PREFIX . 'store_product';
+
+    // --------------------------------------------------------------------------
+
     const STATUS_OUT_OF_STOCK = 'OUT_OF_STOCK';
     const STATUS_IN_STOCK     = 'IN_STOCK';
     const STATUS_PRE_ORDER    = 'PRE_ORDER';
