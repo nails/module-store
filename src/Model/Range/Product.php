@@ -3,6 +3,7 @@
 namespace Nails\Store\Model\Range;
 
 use Nails\Common\Model\Base;
+use Nails\Store\Constants;
 
 class Product extends Base
 {
@@ -18,7 +19,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'range',
             'model'     => 'Range',
-            'provider'  => 'nails/module-store',
+            'provider'  => Constants::MODULE_SLUG,
             'id_column' => 'range_id',
         ]);
         $this->addExpandableField([
@@ -26,7 +27,7 @@ class Product extends Base
             'type'      => self::EXPANDABLE_TYPE_SINGLE,
             'property'  => 'product',
             'model'     => 'Product',
-            'provider'  => 'nails/module-store',
+            'provider'  => Constants::MODULE_SLUG,
             'id_column' => 'product_id',
         ]);
     }

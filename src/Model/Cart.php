@@ -4,6 +4,7 @@ namespace Nails\Store\Model;
 
 use Nails\Common\Model\Base;
 use Nails\Config;
+use Nails\Store\Constants;
 
 class Cart extends Base
 {
@@ -27,7 +28,7 @@ class Cart extends Base
             'type'      => self::EXPANDABLE_TYPE_MANY,
             'property'  => 'products',
             'model'     => 'CartProduct',
-            'provider'  => 'nails/module-store',
+            'provider'  => Constants::MODULE_SLUG,
             'id_column' => 'cart_id',
         ]);
     }
