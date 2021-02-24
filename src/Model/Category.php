@@ -14,15 +14,8 @@ class Category extends Base
 
     // --------------------------------------------------------------------------
 
-    const TABLE_NAME = NAILS_DB_PREFIX . 'store_category';
-
-    // --------------------------------------------------------------------------
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->tableAutoSetSlugs = true;
-    }
+    const TABLE_NAME    = NAILS_DB_PREFIX . 'store_category';
+    const AUTO_SET_SLUG = true;
 
     // --------------------------------------------------------------------------
 

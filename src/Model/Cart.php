@@ -8,7 +8,8 @@ use Nails\Store\Constants;
 
 class Cart extends Base
 {
-    const TABLE_NAME = NAILS_DB_PREFIX . 'store_cart';
+    const TABLE_NAME     = NAILS_DB_PREFIX . 'store_cart';
+    const AUTO_SET_TOKEN = true;
 
     // --------------------------------------------------------------------------
 
@@ -22,7 +23,6 @@ class Cart extends Base
     public function __construct()
     {
         parent::__construct();
-        $this->tableAutoSetTokens = true;
         $this->addExpandableField([
             'trigger'   => 'products',
             'type'      => self::EXPANDABLE_TYPE_MANY,

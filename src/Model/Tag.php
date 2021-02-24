@@ -6,13 +6,6 @@ use Nails\Common\Model\Base;
 
 class Tag extends Base
 {
-    const TABLE_NAME = NAILS_DB_PREFIX . 'store_tag';
-
-    // --------------------------------------------------------------------------
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->tableAutoSetSlugs = true;
-    }
+    const TABLE_NAME    = NAILS_DB_PREFIX . 'store_tag';
+    const AUTO_SET_SLUG = true;
 }

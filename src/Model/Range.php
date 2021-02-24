@@ -6,13 +6,6 @@ use Nails\Common\Model\Base;
 
 class Range extends Base
 {
-    const TABLE_NAME = NAILS_DB_PREFIX . 'store_range';
-
-    // --------------------------------------------------------------------------
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->tableAutoSetSlugs = true;
-    }
+    const TABLE_NAME    = NAILS_DB_PREFIX . 'store_range';
+    const AUTO_SET_SLUG = true;
 }
