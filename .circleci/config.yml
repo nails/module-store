@@ -34,20 +34,5 @@ jobs:
         - ./vendor
         key: composer-dependencies-{{ checksum "composer.json" }}
 
-    # Restore Yarn cache
-    - restore_cache:
-        keys:
-        - yarn-dependencies-{{ checksum "yarn.lock" }}
-
-    # Execute Yarn install and build
-    - run: yarn install
-    - run: yarn build
-
-    # Save Yarn cache
-    - save_cache:
-        paths:
-        - ./node_modules
-        key: yarn-dependencies-{{ checksum "yarn.lock" }}
-
     # run tests!
     - run: ./vendor/bin/phpunit
