@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^5.24",
-    "webpack-cli": "^4.3"
+    "webpack-cli": "^4.5"
   },
   "scripts": {
     "build": "webpack",
