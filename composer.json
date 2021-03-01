@@ -41,15 +41,6 @@
             "type": "module",
             "namespace": "Nails\\Store\\",
             "data": {
-                "nails/module-admin": {
-                    "autoload": {
-                        "assets": {
-                            "js": [
-                                "admin.store.js"
-                            ]
-                        }
-                    }
-                },
                 "nails/module-api": {
                     "namespace": "store"
                 }
