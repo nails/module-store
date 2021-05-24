@@ -23,27 +23,34 @@ class Category extends Base
     {
         $aFields = parent::describeFields($sTable);
 
-        $aFields['label']->validation[] = 'required';
+        $aFields['label']
+            ->setIsRequired(true);
 
-        $aFields['parent_id']->label = 'Parent';
-        $aFields['parent_id']->info  = 'Nesting categories to provide a hierarchy to the items in your store.';
-        $aFields['parent_id']->class = 'js-store-searcher';
-        $aFields['parent_id']->data  = ['api' => 'category'];
+        $aFields['parent_id']
+            ->setLabel('Parent')
+            ->setInfo('Nesting categories to provide a hierarchy to the items in your store.')
+            ->setClass('js-store-searcher')
+            ->setData(['api' => 'category']);
 
-        $aFields['body']->label = 'Body';
-        $aFields['body']->type  = 'cms_widgets';
+        $aFields['body']
+            ->setLabel('Body')
+            ->setType('cms_widgets');
 
-        $aFields['seo_title']->label    = 'SEO Title';
-        $aFields['seo_title']->fieldset = 'SEO';
+        $aFields['seo_title']
+            ->setLabel('SEO Title')
+            ->setFieldset('SEO');
 
-        $aFields['seo_description']->label    = 'SEO Description';
-        $aFields['seo_description']->fieldset = 'SEO';
+        $aFields['seo_description']
+            ->setLabel('SEO Description')
+            ->setFieldset('SEO');
 
-        $aFields['seo_meta']->label    = 'SEO Meta';
-        $aFields['seo_meta']->fieldset = 'SEO';
+        $aFields['seo_meta']
+            ->setLabel('SEO Meta')
+            ->setFieldset('SEO');
 
-        $aFields['seo_script']->label    = 'SEO Script';
-        $aFields['seo_script']->fieldset = 'SEO';
+        $aFields['seo_script']
+            ->setLabel('SEO Script')
+            ->setFieldset('SEO');
 
         return $aFields;
     }

@@ -3,37 +3,50 @@
 namespace Nails\Store\Api\Controller;
 
 use Nails\Api;
+use Nails\Api\Factory\ApiResponse;
 use Nails\Factory;
 
 class Cart extends Api\Controller\Base
 {
-    public function getIndex()
+    public function getIndex(): ApiResponse
     {
         //  @todo (Pablo - 2018-06-17) - Return the contents of the cart
-        return $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+
+        /** @var ApiResponse $oResponse */
+        $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+        return $oResponse;
     }
 
     // --------------------------------------------------------------------------
 
-    public function postProduct()
+    public function postProduct(): ApiResponse
     {
         //  @todo (Pablo - 2018-06-17) - Add a new product to the cart
-        return $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+
+        /** @var ApiResponse $oResponse */
+        $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+        return $oResponse;
     }
 
     // --------------------------------------------------------------------------
 
-    public function putProduct()
+    public function putProduct(): ApiResponse
     {
         //  @todo (Pablo - 2018-06-17) - update an existing cart product
-        return $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+
+        /** @var ApiResponse $oResponse */
+        $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+        return $oResponse;
     }
 
     // --------------------------------------------------------------------------
 
-    public function deleteProduct()
+    public function deleteProduct(): ApiResponse
     {
         //  @todo (Pablo - 2018-06-17) - Delete an existing product
-        return $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+
+        /** @var ApiResponse $oResponse */
+        $oResponse = Factory::factory('ApiResponse', Api\Constants::MODULE_SLUG);
+        return $oResponse;
     }
 }
