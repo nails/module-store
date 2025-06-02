@@ -16,6 +16,9 @@ class Category extends Base
 
     const TABLE_NAME    = NAILS_DB_PREFIX . 'store_category';
     const AUTO_SET_SLUG = true;
+    const FIELD_CLASSES = [
+        'body' => ['ModelFieldWidgets', \Nails\Cms\Constants::MODULE_SLUG],
+    ];
 
     // --------------------------------------------------------------------------
 
@@ -31,10 +34,6 @@ class Category extends Base
             ->setInfo('Nesting categories to provide a hierarchy to the items in your store.')
             ->setClass('js-store-searcher')
             ->setData(['api' => 'category']);
-
-        $aFields['body']
-            ->setLabel('Body')
-            ->setType('cms_widgets');
 
         $aFields['seo_title']
             ->setLabel('SEO Title')
