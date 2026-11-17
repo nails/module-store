@@ -1,8 +1,7 @@
 <?php
 
-namespace Nails\Admin\Store;
+namespace Nails\Store\Admin\Controller;
 
-use Nails\Store\Admin\Controller\Base;
 use Nails\Store\Constants;
 
 class Range extends Base
